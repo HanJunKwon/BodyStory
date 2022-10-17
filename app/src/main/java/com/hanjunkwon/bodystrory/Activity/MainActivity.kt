@@ -1,7 +1,7 @@
-package com.hanjunkwon.bodystrory
+package com.hanjunkwon.bodystrory.Activity
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.hanjunkwon.bodystrory.R
 
 class MainActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

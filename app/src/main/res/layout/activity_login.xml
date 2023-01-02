@@ -9,26 +9,26 @@
 
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/iv_app_logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@null"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/cnlLoginForm"
+        app:layout_constraintBottom_toTopOf="@id/cnl_login_form"
         app:layout_constraintRight_toRightOf="parent"/>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/cnlLoginForm"
+        android:id="@+id/cnl_login_form"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/imageView"
+        app:layout_constraintTop_toBottomOf="@id/iv_app_logo"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/cnlLoginInfo"
+            android:id="@+id/cnl_login_info"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
@@ -67,12 +67,30 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <CheckBox
-            android:id="@+id/ckbAutoLogin"
+            android:id="@+id/chk_auto_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/text_auto_login"
-            app:layout_constraintTop_toBottomOf="@id/cnlLoginInfo"
+            app:layout_constraintTop_toBottomOf="@id/cnl_login_info"
             app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_member_join"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_member_join"
+            app:layout_constraintTop_toBottomOf="@id/chk_auto_login"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_member_find_id_pw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="@string/text_member_find_id_pw"
+            app:layout_constraintLeft_toRightOf="@id/tv_member_join"
             app:layout_constraintBottom_toBottomOf="parent"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

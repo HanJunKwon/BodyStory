@@ -5,4 +5,6 @@
     <string name="text_placeholder_user_id">Enter your ID.</string>
     <string name="text_placeholder_user_pw">Enter your password.</string>
     <string name="text_auto_login">Auto Login</string>
+    <string name="text_member_join">Join</string>
+    <string name="text_member_find_id_pw">Find ID/PW</string>
 </resources>

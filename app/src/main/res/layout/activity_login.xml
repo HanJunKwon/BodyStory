@@ -12,54 +12,66 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_launcher_background" />
+        app:srcCompat="@null"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/cnlLoginForm"
+        app:layout_constraintRight_toRightOf="parent"/>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cnlLoginForm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent">
 
-        <EditText
-            android:id="@+id/edit_user_id"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="@string/text_placeholder_user_id"
-            android:inputType="textPersonName"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cnlLoginInfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-        <EditText
-            android:id="@+id/edit_user_pw"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="@string/text_placeholder_user_pw"
-            android:inputType="textPassword"
-            app:layout_constraintTop_toBottomOf="@id/edit_user_id"
-            app:layout_constraintLeft_toLeftOf="parent"/>
+            <EditText
+                android:id="@+id/edit_user_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/text_placeholder_user_id"
+                android:inputType="textPersonName"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"/>
 
-        <Button
-            android:id="@+id/btn_login"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/text_login"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintLeft_toRightOf="@id/edit_user_id"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            />
+            <EditText
+                android:id="@+id/edit_user_pw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/text_placeholder_user_pw"
+                android:inputType="textPassword"
+                app:layout_constraintTop_toBottomOf="@id/edit_user_id"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="15dp"
+                android:text="@string/text_login"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/edit_user_id"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <CheckBox
             android:id="@+id/ckbAutoLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/text_auto_login"
-            app:layout_constraintTop_toBottomOf="@id/edit_user_pw"
+            app:layout_constraintTop_toBottomOf="@id/cnlLoginInfo"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"/>
 

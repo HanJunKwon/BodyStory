@@ -1,4 +1,4 @@
-package com.hanjunkwon.bodystrory
+package com.hanjunkwon.bodystory
 
 import org.junit.Test
 

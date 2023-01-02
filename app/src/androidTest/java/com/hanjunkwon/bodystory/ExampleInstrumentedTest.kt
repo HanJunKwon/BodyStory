@@ -1,4 +1,4 @@
-package com.hanjunkwon.bodystrory
+package com.hanjunkwon.bodystory
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

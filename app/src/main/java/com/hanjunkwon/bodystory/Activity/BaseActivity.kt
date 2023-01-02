@@ -1,4 +1,4 @@
-package com.hanjunkwon.bodystrory.Activity
+package com.hanjunkwon.bodystory.Activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

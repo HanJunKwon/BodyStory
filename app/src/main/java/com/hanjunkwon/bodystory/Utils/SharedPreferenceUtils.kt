@@ -1,4 +1,4 @@
-package com.hanjunkwon.bodystrory.Utils
+package com.hanjunkwon.bodystory.Utils
 
 import android.content.Context
 import android.content.SharedPreferences

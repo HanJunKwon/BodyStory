@@ -1,8 +1,8 @@
-package com.hanjunkwon.bodystrory.Activity
+package com.hanjunkwon.bodystory.Activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.hanjunkwon.bodystrory.R
+import com.hanjunkwon.bodystory.R
 
 /**
  * 앱이 실행 시 가장 처음 호출되는 Activity

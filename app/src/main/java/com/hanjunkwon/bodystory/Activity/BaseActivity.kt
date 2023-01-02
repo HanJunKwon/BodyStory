@@ -2,7 +2,7 @@ package com.hanjunkwon.bodystrory.Activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.hanjunkwon.bodystrory.R
+import com.hanjunkwon.bodystory.R
 
 /**
  * 모든 액티비티를 상속하는 최상위 액티비티.
